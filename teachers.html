@@ -431,7 +431,7 @@
 <section class=" mb-50">
     <div class="container">
         <div class="border border-neutral-30 rounded-12 bg-main-25 p-24 bg-main-25">
-            <form action="#">
+            <form action="save_teacher.php" method="POST">
                 <h3 class="mb-24">Apply for your interview today!</h3> 
 
                 <!-- Personal information Start -->
@@ -440,12 +440,12 @@
                     <div class="row gy-4">
                         <div class="col-lg-12 col-sm-12">
                             <label for="teacherName" class="text-neutral-700 text-lg fw-medium mb-12">Teachers name <span class="text-danger-600">*</span> </label>
-                            <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="teacherName" placeholder="Enter Your Name...">
+                            <input type="text" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="teacherName" name="teacherName" placeholder="Enter Your Name...">
                         </div>
 
                         <div class="col-lg-6 col-sm-12">
                             <label for="teacherAge" class="text-neutral-700 text-lg fw-medium mb-12">Age <span class="text-danger-600">*</span> </label>
-                            <input type="number" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="teacherAge" placeholder="Enter Your Age...">
+                            <input type="number" class="common-input bg-main-25 rounded-pill border-transparent focus-border-main-600" id="teacherAge" name="teacherAge" placeholder="Enter Your Age...">
                         </div>
 
                         <!-- <div class="col-lg-6 col-sm-12">
@@ -569,8 +569,9 @@
 
                         <div class="col-lg-12 col-sm-12">
                             <label for="address" class="text-neutral-700 text-lg fw-medium mb-12">Any specific notes </label>
-                            <textarea class="common-input bg-main-25 rounded-24 border-transparent focus-border-main-600" id="address" placeholder="Enter Your message..."></textarea>
+                            <textarea class="common-input bg-main-25 rounded-24 border-transparent focus-border-main-600" id="notes"  name="notes" placeholder="Enter Your message..."></textarea>
                         </div>
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
                     </div>
                 </div>
                 <!-- Personal information End -->
